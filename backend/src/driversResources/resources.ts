@@ -1,4 +1,4 @@
-import pgp from "pg-promise";
+ import pgp from "pg-promise";
 
 export async function saveAccount (account: any) {
     const connection = pgp()("postgres://postgres:123456@localhost:5432/app");

@@ -2,6 +2,7 @@ import AccountDAO from "./AccountDAO";
 import { validateCpf } from "./validateCpf";
 import { validatePassword } from "./validatePassword";
 
+// Tratativa de dados
 export default class Signup {
 
     constructor (readonly accountDAO: AccountDAO) {
@@ -16,7 +17,7 @@ export default class Signup {
     }
 
     async execute (input: any): Promise<any> {
-        if (!this.isValidName(input.name)) throw new Error("Invalid name");
+        if (!this.isValidName(input.name)) throw   ("Invalid name");
         if (!this.isValidEmail(input.email)) throw new Error("Invalid email");
         if (!validateCpf(input.document)) throw new Error("Invalid document");
         if (!validatePassword(input.password)) throw new Error("Invalid password");

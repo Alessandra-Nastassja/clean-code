@@ -5,8 +5,7 @@ import Signup from "./Signup";
 import { AccountDAODatabase } from "./AccountDAO";
 import GetAccount from "./GetAccount";
 
-// Driver
-
+// "Back-end" (driver)
 const app = express();
 app.use(express.json());
 app.use(cors());

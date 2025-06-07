@@ -1,5 +1,6 @@
 import axios from "axios";
 
+//  Aqui foi removido para os drivers e resourcers
 axios.defaults.validateStatus = () => true;
 
 test("Deve criar uma conta válida", async () => {
